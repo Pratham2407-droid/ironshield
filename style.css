@@ -1,0 +1,50 @@
+body {
+  margin: 0;
+  font-family: monospace;
+  background: #0b0f14;
+  color: #00ff9c;
+}
+
+.sidebar {
+  width: 220px;
+  height: 100vh;
+  background: #111;
+  position: fixed;
+  padding: 20px;
+}
+
+.sidebar button {
+  display: block;
+  width: 100%;
+  margin: 10px 0;
+  padding: 10px;
+  background: #00ff9c;
+  border: none;
+  cursor: pointer;
+}
+
+.main {
+  margin-left: 240px;
+  padding: 30px;
+}
+
+.cards {
+  display: flex;
+  gap: 20px;
+}
+
+.card {
+  background: #111;
+  padding: 20px;
+  border-radius: 10px;
+  width: 200px;
+}
+
+.terminal {
+  background: black;
+  margin-top: 30px;
+  padding: 20px;
+  height: 300px;
+  overflow-y: auto;
+  border: 1px solid #00ff9c;
+}
