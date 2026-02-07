@@ -1,10 +1,43 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>IronShield</title>
+  <title>IronShield Dashboard</title>
+  <link rel="stylesheet" href="style.css">
 </head>
 <body>
-  <h1>IronShield Security Tool</h1>
-  <p>Project deployed successfully.</p>
+
+<div class="sidebar">
+  <h2>🛡 IronShield</h2>
+  <button onclick="runScan()">Run Scan</button>
+  <button onclick="loadLogs()">View Logs</button>
+  <button onclick="systemStatus()">System Status</button>
+</div>
+
+<div class="main">
+  <h1>Security Dashboard</h1>
+
+  <div class="cards">
+    <div class="card">
+      <h3>Threats Blocked</h3>
+      <p id="threats">0</p>
+    </div>
+
+    <div class="card">
+      <h3>Active Scans</h3>
+      <p id="scans">0</p>
+    </div>
+
+    <div class="card">
+      <h3>System Status</h3>
+      <p id="status">Secure</p>
+    </div>
+  </div>
+
+  <div class="terminal" id="terminal">
+    IronShield initialized...
+  </div>
+</div>
+
+<script src="script.js"></script>
 </body>
 </html>
